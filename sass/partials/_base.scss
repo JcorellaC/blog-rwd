@@ -1,0 +1,67 @@
+// 
+// Estilos para los elementos base
+//
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: $open-sans;
+	margin: 0;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+p, li {
+	font-family: $open-sans;
+	@include font-size(17);
+	margin: 0;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: $hind;
+}
+
+h2{
+	@include font-size(25);
+	font-family: $hind;
+}
+
+.modules {
+	border-bottom: 1px $gris-oscuro solid;
+	overflow: hidden;
+}
+
+.title-section{
+	color: $orange;
+	font-family: $hind;
+	@include font-size(28);
+	margin-top: 0;
+}
+
+@media (min-width: 600px){
+	p, li {
+		font-family: $open-sans;
+		@include font-size(17);
+		margin: 0;
+	}
+}
